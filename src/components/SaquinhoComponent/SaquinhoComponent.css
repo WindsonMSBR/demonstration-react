@@ -41,6 +41,13 @@
     }
 }
 
-@media screen {
-    
+@media only screen and (max-width: 600px) {
+    #SaquinhoComponent {
+        margin-right: 0;
+    }
+    #SaquinhoComponent:hover {
+        .overlay {
+            top: 13rem;
+        }
+    }
 }

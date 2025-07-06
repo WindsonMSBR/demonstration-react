@@ -1,18 +1,35 @@
 #CandyListComponent {
-    > div {
+    >div {
         display: flex;
         align-items: center;
+
         h1 {
             width: 100%;
             color: goldenrod;
         }
     }
-    > ul {
+
+    >ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
-        > li {
+
+        >li {
             list-style: none;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        > ul {
+            grid-template-columns: repeat(1, 1fr);
+            padding-left: 0;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 992px) {
+        > ul {
+            grid-template-columns: repeat(2, 1fr);
+            padding-left: 0;
         }
     }
 }

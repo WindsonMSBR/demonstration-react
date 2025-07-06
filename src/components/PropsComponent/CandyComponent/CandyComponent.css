@@ -4,20 +4,25 @@
     flex-direction: column;
     align-items: center;
     gap: .4rem;
-    > span:first-of-type {
+
+    >span:first-of-type {
         font-size: 1.4rem;
         font-weight: bold;
         color: goldenrod;
     }
-    > span:last-of-type {
+
+    >span:last-of-type {
         font-size: 1.2rem;
         font-weight: bold;
         color: darkgoldenrod;
     }
-    > img {
+
+    >img {
         width: 35rem;
+        max-width: 100%;
     }
-    > button {
+
+    >button {
         border-radius: 12px;
         border: 1px solid goldenrod;
         background-color: none;
@@ -27,8 +32,21 @@
         font-size: 1.5rem;
         width: 60%;
     }
-    > button:hover {
+
+    >button:hover {
         color: white;
         background-color: goldenrod;
+    }
+
+    @media only screen and (max-width: 600px) {
+        >button {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 992px) {
+        >button {
+            font-size: 1.3rem;
+        }
     }
 }
