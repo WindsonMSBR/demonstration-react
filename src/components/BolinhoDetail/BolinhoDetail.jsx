@@ -1,8 +1,8 @@
 //Rota dinãmica
 import { useParams, useNavigate } from "react-router-dom";
-import chantillyImg from '../../assets/chantilly.jpg';
-import chocolateImg from '../../assets/chocolate.jpg';
-import amendoimImg from '../../assets/amendoim.jpg';
+import chantillyImg from '../../assets/Chantilly.jpg';
+import chocolateImg from '../../assets/Chocolate.jpg';
+import amendoimImg from '../../assets/Amendoim.jpg';
 
 const bolinhos = [
   { id: 1, title: "Bolinho de chantilly", img: chantillyImg },

@@ -9,13 +9,13 @@
     }
 }
 
-#SaquinhoComponent {
+#SaquinhoComponent:hover {
     svg {
         margin-right: 10rem;
         margin: 0;
     }
     .overlay {
-        top: 8rem;
+        top: 11rem;
         display: block;
         position: absolute;
         z-index: 1;
