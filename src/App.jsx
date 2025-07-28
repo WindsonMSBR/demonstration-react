@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
 import './App.css';
 import CandyListComponent from './components/PropsComponent/CandyListComponent/CandyListComponent';
 import BolinhoDetail from './components/BolinhoDetail/BolinhoDetail';
@@ -10,8 +9,6 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <BrowserRouter>
       <Navbar />
