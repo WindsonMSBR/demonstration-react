@@ -8,11 +8,11 @@ const SaquinhoComponent = ({ list }) => {
             <TbPaperBag color='darkgoldenrod' size={'4rem'} />
             <div className='overlay'>{list?.length ? <ul>{
                 list.map((candy, i) => {
+                    const candyData = candies.find(c => c.id === candy);
                     return (
-                        <>
-                            <li key={i}>{candies.find(c => c.id === candy).name}</li>   
-                            <hr />
-                        </>
+                        <li key={`${candy}-${i}`} style={{ borderBottom: '1px solid #ccc', marginBottom: '5px', paddingBottom: '5px' }}>
+                            {candyData ? candyData.name : 'Item não encontrado'}
+                        </li>
                     )
                 })}</ul> : 
                 <>Por enquanto nada aqui...</>}</div>
