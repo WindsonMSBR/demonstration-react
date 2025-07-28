@@ -8,7 +8,7 @@ const CandyListComponent = () => {
     const [candyList, setList] = useState([]);
 
     useEffect(() => {
-        const candy = candies.find(c => c.id == candyList[candyList.length - 1]);
+        const candy = candies.find(c => c.id === candyList[candyList.length - 1]);
         if (!candy) return;
         alert(`Colocamos ${candy.name} no saquinho.`);
     }, [candyList])
